@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import CookieBanner from "../components/cookieBanner";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <meta name="description" content="Maurice Kuehl personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <CookieBanner />
+      </main>
       <footer className={styles.footer}></footer>
     </div>
   );
