@@ -13,7 +13,6 @@ export default function Home() {
       <main className={styles.main}>
         <CookieBanner />
       </main>
-      <footer className={styles.footer}></footer>
     </div>
   );
 }

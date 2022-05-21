@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
-import styleCookie from "../styles/CookieBanner.module.scss";
 import YouTube from "react-youtube";
+import styleCookie from "../styles/CookieBanner.module.scss";
 
 export default function CookieBanner() {
   /* function onPlayerReady(event) {
@@ -53,55 +53,60 @@ export default function CookieBanner() {
   const [shouldPlay, playVid] = useState(false);
   const [visibility, setVisibility] = useState(true);
   return (
-    <div
-      className={`${styleCookie.container} ${
-        visibility ? "" : styleCookie.hidden
-      }`}
-    >
-      <div className={styleCookie.text}>
-        Can i get your{" "}
-        <Link target="_blank" href="/cookies">
-          <a className={styleCookie.link}>cookies</a>
-        </Link>
-        ?
-      </div>
-      <button
-        type="button"
-        className={styleCookie.buttonNo}
-        onClick={() => {
-          alert(":(");
-          setVisibility(false);
-        }}
-      >
-        No
-      </button>
-      <button
-        type="button"
-        className={styleCookie.buttonYes}
-        onClick={() => {
-          playVid(true);
-        }}
-      >
-        Yes
-      </button>
-      {shouldPlay && (
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    <>
+      {!shouldPlay ? (
+        <div
+          className={`${styleCookie.container} ${
+            visibility ? "" : styleCookie.hidden
+          }`}
+        >
+          <div className={styleCookie.text}>
+            Can i get your{" "}
+            <Link target="_blank" href="/cookies">
+              <a className={styleCookie.link}>cookies</a>
+            </Link>
+            ?
+          </div>
+          <button
+            type="button"
+            className={styleCookie.buttonNo}
+            onClick={() => {
+              alert(":(");
+              setVisibility(false);
+            }}
+          >
+            No
+          </button>
+          <button
+            type="button"
+            className={styleCookie.buttonYes}
+            onClick={() => {
+              playVid(true);
+            }}
+          >
+            Yes
+          </button>
+        </div>
+      ) : (
         <YouTube
-          videoId="dQw4w9WgXcQ" // defaults -> ''
-          className={CookieBanner.youtube} // defaults -> ''
+          videoId="dQw4w9WgXcQ"
+          className={styleCookie.youtube}
           opts={{
             playerVars: {
-              // https://developers.google.com/youtube/player_parameters
-              autoplay: 0,
+              autoplay: 1,
+              controls: 0,
+              playsinline: 1,
+              loop: 1,
+              playlist: "dQw4w9WgXcQ",
             },
           }}
           onReady={(event) => {
-            //event.target.playVideo();
-          }} // defaults -> noop
-          onPlay={() => {
             document.querySelector("html").style.overflow = "hidden";
+            event.setVolume(100);
           }}
         />
       )}
-    </div>
+    </>
   );
 }
