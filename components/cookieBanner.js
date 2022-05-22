@@ -4,52 +4,6 @@ import YouTube from "react-youtube";
 import styleCookie from "../styles/CookieBanner.module.scss";
 
 export default function CookieBanner() {
-  /* function onPlayerReady(event) {
-    document.querySelector("#player").style.display = "block";
-    event.target.playVideo();
-  }
-  function play() {
-    eval("https://www.youtube.com/iframe_api");
-    var firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player("player", {
-        videoId: "dQw4w9WgXcQ",
-        playerVars: {
-          playsinline: 1,
-          controls: 0,
-        },
-        events: {
-          onReady: onPlayerReady,
-        },
-      });
-    }
-  } */
-  /* let toPlay = false;
-  document
-    .querySelector(".cookie-banner-overlay")
-    .addEventListener("click", () => {
-      toPlay = true;
-    });
-
-  function onPlayerReady(event) {
-    if (toPlay) {
-      play(event);
-    }
-    document
-      .querySelector(".cookie-banner-overlay")
-      .addEventListener("click", () => {
-        play(event);
-      });
-  } */
-
-  /* function play(event) {
-    document.querySelector("#player").style.display = "block";
-    event.target.playVideo();
-  }
- */
   const [shouldPlay, playVid] = useState(false);
   const [visibility, setVisibility] = useState(true);
   return (
