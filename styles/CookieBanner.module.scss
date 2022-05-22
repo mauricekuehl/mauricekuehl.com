@@ -2,7 +2,7 @@
 $border-radius: 0.5rem;
 
 .container {
-  background-color: Var.$background-light;
+  background-color: rgba(Var.$background-light, 0.8);
   height: auto;
   width: auto;
   padding: 0.5rem 0.75rem;
@@ -12,13 +12,6 @@ $border-radius: 0.5rem;
   border-radius: 0% $border-radius $border-radius 0% / 0% $border-radius
     $border-radius 0%;
 }
-@media (max-width: 450px) {
-  .container {
-    bottom: 0;
-    width: 100%;
-    border-radius: 0;
-  }
-}
 .link {
   display: inline-block;
   color: lighten(Var.$primary, 40%);
@@ -26,6 +19,9 @@ $border-radius: 0.5rem;
 .text {
   display: inline-block;
   margin-right: 0.25rem;
+}
+.buttonWrapper {
+  display: inline-block;
 }
 .button {
   display: inline-block;
@@ -36,7 +32,7 @@ $border-radius: 0.5rem;
 }
 .buttonNo {
   @extend .button;
-  background-color: Var.$background-light;
+  background-color: transparent;
   color: Var.$text;
   border: 1px solid Var.$background-light;
 }
@@ -78,5 +74,21 @@ $border-radius: 0.5rem;
     width: 100%;
     height: 100%;
     pointer-events: none;
+  }
+}
+@media (max-width: 455px) {
+  .container {
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(Var.$background-light, 0.5);
+  }
+}
+@media (max-width: 302px) {
+  .container {
+    display: none;
   }
 }

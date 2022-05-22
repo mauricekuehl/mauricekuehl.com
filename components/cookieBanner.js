@@ -68,25 +68,27 @@ export default function CookieBanner() {
             </Link>
             ?
           </div>
-          <button
-            type="button"
-            className={styleCookie.buttonNo}
-            onClick={() => {
-              alert(":(");
-              setVisibility(false);
-            }}
-          >
-            No
-          </button>
-          <button
-            type="button"
-            className={styleCookie.buttonYes}
-            onClick={() => {
-              playVid(true);
-            }}
-          >
-            Yes
-          </button>
+          <div className={styleCookie.buttonWrapper}>
+            <button
+              type="button"
+              className={styleCookie.buttonNo}
+              onClick={() => {
+                alert(":(");
+                setVisibility(false);
+              }}
+            >
+              No
+            </button>
+            <button
+              type="button"
+              className={styleCookie.buttonYes}
+              onClick={() => {
+                playVid(true);
+              }}
+            >
+              Yes
+            </button>
+          </div>
         </div>
       ) : (
         <YouTube
