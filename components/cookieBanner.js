@@ -59,7 +59,8 @@ export default function CookieBanner() {
           }}
           onReady={(event) => {
             document.querySelector("html").style.overflow = "hidden";
-            event.setVolume(100);
+            event.target.setVolume(100);
+            event.target.playVideo();
           }}
         />
       )}
