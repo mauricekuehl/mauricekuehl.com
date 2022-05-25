@@ -33,9 +33,9 @@ export default function Cookie() {
     const area = ch * cw;
     const balls = area / areaBall / 1.5;
     Composite.add(engine.current.world, [
-      Bodies.rectangle(0, ch, cw * 3, 50, { isStatic: true }),
-      Bodies.rectangle(-10, 0, 10, ch * 2, { isStatic: true }),
-      Bodies.rectangle(cw + 10, 0, 10, ch * 2, { isStatic: true }),
+      Bodies.rectangle(0, ch + 170, cw * 3, 400, { isStatic: true }),
+      Bodies.rectangle(-50, 0, 100, ch * 2, { isStatic: true }),
+      Bodies.rectangle(cw + 50, 0, 100, ch * 2, { isStatic: true }),
       ...Array(Math.round(balls))
         .fill(null)
         .map(() => {
