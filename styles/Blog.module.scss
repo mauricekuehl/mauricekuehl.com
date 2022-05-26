@@ -1,0 +1,43 @@
+@use "./Var.scss";
+
+$link: rgb(50, 50, 255);
+$background: Var.$background;
+$text: Var.$text;
+.container {
+  overflow: hidden;
+  background-color: $background;
+  color: $text;
+  min-height: 100vh;
+}
+.main {
+  max-width: 42rem;
+  margin: 7em auto;
+}
+.article {
+  @extend .main;
+  a {
+    color: $link;
+  }
+}
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.blogDescription {
+  font-size: 1.125rem;
+}
+.listItem {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+.listHeading {
+  font-size: 2rem;
+  color: $text;
+}
+.listHeading:hover {
+  color: rgba($text, 0.8);
+}
+.lightText {
+  font-size: 1rem;
+  color: rgba($text, 0.75);
+}
