@@ -1,6 +1,6 @@
 @use "./Var.scss";
 
-$link: rgb(50, 50, 255);
+$link: Var.$primary;
 $background: Var.$background;
 $text: Var.$text;
 .container {
@@ -11,31 +11,44 @@ $text: Var.$text;
 }
 .main {
   max-width: 42rem;
-  margin: 7em auto;
+  margin: 7rem auto;
+  padding: 1.25rem;
 }
 .article {
   @extend .main;
   a {
     color: $link;
+    &:hover {
+      color: Var.$text;
+    }
   }
 }
 .heading {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.linkHome {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: $link;
+  a:hover {
+    color: Var.$text;
+  }
 }
 .blogDescription {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 .listItem {
   list-style: none;
   margin: 0.5rem 0;
 }
 .listHeading {
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: $text;
-}
-.listHeading:hover {
-  color: rgba($text, 0.8);
+  &:hover {
+    color: Var.$primary;
+  }
 }
 .lightText {
   font-size: 1rem;

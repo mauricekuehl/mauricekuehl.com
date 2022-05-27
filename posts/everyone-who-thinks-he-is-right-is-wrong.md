@@ -1,5 +1,5 @@
 ---
-title: "everyone who thinks he is right is wrong"
+title: "Everyone who thinks he is right is wrong"
 date: "2022-01-01"
 ---
 

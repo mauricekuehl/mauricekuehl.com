@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import styles from "../../styles/Blog.module.scss";
 
@@ -12,7 +13,14 @@ export default function Post({ postData }) {
       </Head>
       <article className={styles.article}>
         <h1 className={styles.heading}>{postData.title}</h1>
-        <div>{new Date(postData.date).toDateString()} </div>
+        <div>
+          <span>{new Date(postData.date).toDateString()}</span>
+          <span className={styles.linkHome}>
+            <Link href="/blog">
+              <a>Home</a>
+            </Link>
+          </span>
+        </div>
         {/*  eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
