@@ -16,14 +16,10 @@ export default function Blog({ allPostsData }) {
           {" "}
           <h1 className={styles.heading}>Maurice Kuehl&apos;s Blog</h1>
           <p className={styles.blogDescription}>
-            i am .. and i right about ... ? Ich werde reich sein btw ich brauche
-            hier nur dummie text und weiß nicht was ich schreiebn soll xDi am ..
-            and i right about ... ? Ich werde reich sein btw ich brauche hier
-            nur dummie text und weiß nicht was ich schreiebn soll xDi am .. and
-            i right about ... ? Ich werde reich sein btw ich brauche hier nur
-            dummie text und weiß nicht was ich schreiebn soll xDi am .. and i
-            right about ... ? Ich werde reich sein btw ich brauche hier nur
-            dummie text und weiß nicht was ich schreiebn soll xD
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute iru
           </p>
         </section>
         <section>
