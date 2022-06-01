@@ -81,7 +81,7 @@ $border-radius: 0.25rem;
     pointer-events: none;
   }
 }
-@media (max-width: 455px) {
+@media (max-width: 550px) {
   .container {
     bottom: 0;
     width: 100%;
@@ -92,7 +92,31 @@ $border-radius: 0.25rem;
     background-color: rgba(Var.$background-light, 0.5);
   }
 }
-@media (max-width: 302px) {
+@media (max-width: 410px) {
+  .text {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+  }
+  .container {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .text {
+    font-size: 0.875rem;
+  }
+  .button {
+    font-size: 0.75rem;
+  }
+  .container {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media (max-width: 316px) {
   .container {
     display: none;
   }
