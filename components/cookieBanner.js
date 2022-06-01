@@ -58,7 +58,14 @@ export default function CookieBanner() {
             },
           }}
           onReady={(event) => {
-            document.querySelector("html").style.overflow = "hidden";
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "auto",
+            });
+            const htmlStyle = document.querySelector("html").style;
+            htmlStyle.overflow = "hidden";
+            htmlStyle.height = "100vh";
             event.target.setVolume(100);
             event.target.playVideo();
           }}
