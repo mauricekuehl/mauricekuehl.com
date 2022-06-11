@@ -1,0 +1,21 @@
+name: build static pages workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set Node.js 17
+        uses: actions/setup-node@v1
+        with:
+          version: 12.x
+      - run: npm ci
+      - run: npm run build
+      - run: npm export
