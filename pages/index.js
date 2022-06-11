@@ -8,23 +8,34 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Maurice Kuehl</title>
-        <meta name="description" content="Maurice Kuehl personal website" />
+        <meta
+          name="description"
+          content="I'm 16 years old and will graduate in 2023, besides I do mainly
+          web development. My ambitions and goals are extremely high, why I try
+          to absorb as much knowledge as physically possible without losing a
+          decent balance."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1 className={styles.h1}>
-          Hi, I&apos;am{" "}
-          <span className={styles.personalName}>Maurice Kuehl</span>
+          Hi, I&apos;m <span className={styles.personalName}>Maurice Kühl</span>
         </h1>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute iru
+          I&apos;m{" "}
+          {Math.floor(
+            (new Date().getTime() - new Date("2005-07-18").getTime()) /
+              (1000 * 60 * 60 * 24 * 365.25)
+          )}{" "}
+          years old and will graduate in 2023, besides I do mainly web
+          development. My ambitions and goals are extremely high, why I try to
+          absorb as much knowledge as physically possible without losing a
+          decent balance.
         </p>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          My interests are in fields of fullstack developments with
+          React.js/Node.js, web hacking, Linux, volleyball and cryptocurrencies,
+          business and actually building useful applications.
         </p>
         <hr className={styles.hr} />
         <h2 className={styles.h2}>Follow me on:</h2>

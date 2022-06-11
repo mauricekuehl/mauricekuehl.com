@@ -16,10 +16,8 @@ export default function Blog({ allPostsData }) {
           {" "}
           <h1 className={styles.heading}>Maurice Kuehl&apos;s Blog</h1>
           <p className={styles.blogDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute iru
+            I will post here regularly things that inspire and influence me.
+            Additionally I will document my journey.
           </p>
         </section>
         <section>

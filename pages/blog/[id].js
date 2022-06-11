@@ -8,7 +8,10 @@ export default function Post({ postData }) {
     <div className={styles.container}>
       <Head>
         <title>{postData.title}</title>
-        <meta name="description" content="Maurice Kuehl personal blog" />
+        <meta name="description" content={postData.description} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={postData.title} />
+        <meta property="og:site_name" content="Maurice Kuehl's Blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article className={styles.article}>

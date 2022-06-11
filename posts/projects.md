@@ -1,6 +1,7 @@
 ---
 title: "List of all projects"
 date: "2022-5-31"
+description: "List of projects made by Maurice Kühl"
 ---
 
 - [Mauricekuehl.com](https://github.com/mauricekuehl/mauricekuehl.com)
