@@ -15,7 +15,6 @@ export default function Home() {
           to absorb as much knowledge as physically possible without losing a
           decent balance."
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1 className={styles.h1}>

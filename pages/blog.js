@@ -9,7 +9,6 @@ export default function Blog({ allPostsData }) {
       <Head>
         <title>Maurice Kuehl&apos;s Blog</title>
         <meta name="description" content="Maurice Kuehl personal blog" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <section>

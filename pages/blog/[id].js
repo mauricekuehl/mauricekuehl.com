@@ -12,7 +12,6 @@ export default function Post({ postData }) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={postData.title} />
         <meta property="og:site_name" content="Maurice Kuehl's Blog" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <article className={styles.article}>
         <h1 className={styles.heading}>{postData.title}</h1>
