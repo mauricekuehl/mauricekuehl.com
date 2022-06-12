@@ -10,4 +10,5 @@ description: "The ever growing collection of quotes that inspire Maurice Kühl"
 4. If two people have the same opinion, one is unnecessary.
 5. The Golden Rule: Whoever Has the Gold Makes the Rules
 6. There is only one good, knowledge, and one evil, ignorance.
-7. Strong minds discuss ideas, average minds discuss events, weak minds discuss people.
+7. We are wrong because we don't know what we don't know and so think that we know.
+8. Strong minds discuss ideas, average minds discuss events, weak minds discuss people.
