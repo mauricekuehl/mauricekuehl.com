@@ -33,7 +33,7 @@ export default function Home() {
         </p>
         <p className={styles.description}>
           My interests are in fields of fullstack developments with
-          React.js/Node.js, web hacking, Linux, volleyball and cryptocurrencies,
+          React.js/Node.js, web hacking, Linux, volleyball, cryptocurrencies,
           business and actually building useful applications.
         </p>
         <hr className={styles.hr} />
