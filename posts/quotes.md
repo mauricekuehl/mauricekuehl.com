@@ -12,3 +12,5 @@ description: "The ever growing collection of quotes that inspire Maurice Kühl"
 6. There is only one good, knowledge, and one evil, ignorance.
 7. We are wrong because we don't know what we don't know and so think that we know.
 8. Strong minds discuss ideas, average minds discuss events, weak minds discuss people.
+9. Respond, don't react.
+10. You have to get it wrong to get it right
